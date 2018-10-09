@@ -1,9 +1,9 @@
-package com.nurbekov.zh.imageviewer
+package com.nurbekov.zh.imageviewer.views
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import com.bumptech.glide.Glide
+import com.nurbekov.zh.imageviewer.R
 import kotlinx.android.synthetic.main.activity_full_screen_image.*
 import it.sephiroth.android.library.imagezoom.ImageViewTouchBase
 import org.jetbrains.anko.AnkoLogger

@@ -1,4 +1,4 @@
-package com.nurbekov.zh.imageviewer
+package com.nurbekov.zh.imageviewer.apiService
 
 import com.nurbekov.zh.imageviewer.Utils.Consts
 import com.nurbekov.zh.imageviewer.model.FlikrImage

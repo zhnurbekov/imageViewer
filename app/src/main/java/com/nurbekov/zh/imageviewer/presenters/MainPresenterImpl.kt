@@ -3,8 +3,8 @@ package com.nurbekov.zh.imageviewer.presenters
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
-import com.nurbekov.zh.imageviewer.FlickrApi
-import com.nurbekov.zh.imageviewer.FullScreenImageActivity
+import com.nurbekov.zh.imageviewer.apiService.FlickrApi
+import com.nurbekov.zh.imageviewer.views.FullScreenImageActivity
 import com.nurbekov.zh.imageviewer.Utils.Consts
 import com.nurbekov.zh.imageviewer.helper.SuggestionHelperDao
 import com.nurbekov.zh.imageviewer.model.FlikrImage

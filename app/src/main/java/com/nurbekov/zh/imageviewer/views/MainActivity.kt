@@ -1,4 +1,4 @@
-package com.nurbekov.zh.imageviewer
+package com.nurbekov.zh.imageviewer.views
 
 import android.os.Build
 import android.support.v7.app.AppCompatActivity
@@ -12,6 +12,7 @@ import android.widget.*
 import com.github.salomonbrys.kodein.KodeinInjector
 import com.github.salomonbrys.kodein.android.AppCompatActivityInjector
 import com.github.salomonbrys.kodein.instance
+import com.nurbekov.zh.imageviewer.R
 import com.nurbekov.zh.imageviewer.adapters.SuggestionAdapter
 import com.nurbekov.zh.imageviewer.adapters.ImagesAdapter
 import com.nurbekov.zh.imageviewer.model.FlikrImage

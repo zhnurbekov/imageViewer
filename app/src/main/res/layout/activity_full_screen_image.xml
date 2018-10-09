@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black"
-    tools:context="com.nurbekov.zh.imageviewer.FullScreenImageActivity">
+    tools:context="com.nurbekov.zh.imageviewer.views.FullScreenImageActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
