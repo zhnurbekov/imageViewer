@@ -58,7 +58,7 @@ class ImagesAdapter : BaseAdapter, AnkoLogger {
         Glide.with(context)
                 .load(photo.url)
                 .apply(RequestOptions().override(300).centerCrop()
-                        .placeholder(R.mipmap.loading).diskCacheStrategy(DiskCacheStrategy.AUTOMATIC))
+                        .placeholder(R.mipmap.loading).diskCacheStrategy(DiskCacheStrategy.DATA))
                 .into(imageView.image_item)
         return imageView
 

@@ -17,6 +17,7 @@ import com.nurbekov.zh.imageviewer.adapters.SuggestionAdapter
 import com.nurbekov.zh.imageviewer.adapters.ImagesAdapter
 import com.nurbekov.zh.imageviewer.model.FlikrImage
 import com.nurbekov.zh.imageviewer.presenters.MainPresenter
+import com.pawegio.kandroid.inputMethodManager
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info
 
@@ -57,6 +58,7 @@ class MainActivity : AppCompatActivity(), AppCompatActivityInjector, AnkoLogger 
                 recycler_view_suggestions.visibility = View.GONE
                 searchText = query
                 searchImages(searchText)
+                inputMethodManager!!.hideSoftInputFromWindow(getWindow().getDecorView().getRootView().windowToken, 0)
                 return true
             }
             override fun onQueryTextChange(newText: String): Boolean {
@@ -106,10 +108,10 @@ class MainActivity : AppCompatActivity(), AppCompatActivityInjector, AnkoLogger 
         })
     }
 
-
     private fun setSuggestion(suggestion: String) {
         toolbar_searchview.setQuery(suggestion, true)
         recycler_view_suggestions.visibility = View.GONE
+
     }
 
     private fun removeSuggestion(suggestion: String) {
